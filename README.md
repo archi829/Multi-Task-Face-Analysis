@@ -1,5 +1,5 @@
 # Multi-Task Face Analysis: Age Estimation & Gender Classification
----
+
 ## 📌 Project Overview
 
 This project implements a **Multi-Task Learning (MTL)** framework using PyTorch to predict two distinct target variables from a single face image simultaneously:
@@ -34,7 +34,6 @@ The project followed an iterative experimental approach to improve performance a
   1. **Phase 1:** Freeze backbone, train only heads for 5 epochs (LR = 1e-4).  
   2. **Phase 2:** Unfreeze full model, fine-tune for 13 epochs (LR = 1e-5) with Early Stopping.
 
----
 ## 📊 Results
 
 The evaluation metric was the Harmonic Mean of Age **nRMSE** and Gender **Macro F1 Score**.
@@ -45,7 +44,6 @@ The evaluation metric was the Harmonic Mean of Age **nRMSE** and Gender **Macro 
 | **Model 2** | Scratch CNN v2 + Balanced Loss | 10.93 | 0.8618 |
 | **Model 3** | **ResNet34 (Transfer Learning)** | **8.46** | **0.9157** |
 
----
 ## 🛠️ Setup & Usage
 
 ### 1. Clone the repository
@@ -59,7 +57,6 @@ pip install torch torchvision pandas numpy scikit-learn pillow
 ### 3. Run the Notebook
 Open `Code_file.ipynb` to view the data processing, training loop, and inference pipeline.
 
----
 ## 🚀 Future Work (Suggested)
 
 1. **Ordinal Regression for Age**  
