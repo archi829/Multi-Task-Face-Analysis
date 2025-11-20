@@ -21,9 +21,7 @@ The project followed an iterative experimental approach to improve performance a
 ### 2. Improved Custom CNN (v2)
 - **Enhancements:** Increased depth to 4 layers and introduced **Batch Normalization** and **Dropout (0.5)** for regularization.  
 - **Loss Balancing:** Implemented a weighted multi-task loss function to balance the regression and classification magnitudes:  
-  \[
-  L_{total} = L_{MSE}(Age) + \lambda \cdot L_{CE}(Gender)
-  \]  
+`L_total = L_MSE(Age) + λ · L_CE(Gender)`
   - *Optimal λ:* 50.0
 
 ### 3. Transfer Learning (ResNet34) – **Final Model**
